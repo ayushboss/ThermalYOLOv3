@@ -14,4 +14,8 @@ for category in setup_data['categories']:
     category_name = category['name']
     print(category_name, file = obj_names_outfile)
 
-print(len(setup_data['categories']))
+print(len(setup_data['categories']), obj_data_outfile)
+print('train  = data/train.txt', obj_data_outfile)
+print('valid  = data/valid.txt', obj_data_outfile)
+print('names = data/obj.names', obj_data_outfile)
+print('backup = backup/', obj_data_outfile)
